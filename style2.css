@@ -1,0 +1,53 @@
+ h1 {
+      text-align: center;
+      margin-block: 10%;
+      font-size: 50px;
+      color: #FFF8DE;
+      background-color: #62109F;
+      border-radius: 100px;
+      padding: 20px 50px;
+    }
+    h3 {
+      text-align: center;
+      margin: 20px 0 50px;
+    }
+    body {
+      background-color: #B7BDF7;
+    }
+    input {
+      border-radius: 10px;
+      background-color: #B0FFFA;
+      border: none;
+      box-shadow: 0 2px 4px black;
+      margin-block: 2px;
+    }
+    textarea {
+      border-radius: 10px;
+      background-color: #B0FFFA;
+      color: black;
+      margin-block: 10px;
+      box-shadow: 0 2px 4px black;
+    }
+    fieldset {
+      border-radius: 20px;
+      box-shadow: 0 3px 5px black;
+      background-color: #FFF8DE;
+    }
+    select {
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0 2px 4px black;
+    }
+    div {
+      display: flex;
+      gap: 10px;
+      position: relative;
+      left: 120%;
+      margin-block: 30px;
+    }
+    button {
+      border-radius: 6px;
+      padding: 4px 7px;
+      background-color: #296374;
+      color: white;
+      box-shadow: 0 3px 5px #000;
