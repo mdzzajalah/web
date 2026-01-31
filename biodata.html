@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    body {
+      background-color: #B7BDF7;
+    }
+    input {
+      border-radius: 10px;
+    }
+    textarea {
+      border-radius: 10px;
+      background-color: #3897f0;
+      color: white;
+    }
+    fieldset {
+      border-radius: 20px;
+      box-shadow: 0 3px 5px black;
+    }
+    select {
+      border-radius: 10px;
+    }
+  </style>
+  <h1>BIODATA DIRI</h1>
+  <form action="localhost/formm-tujuan" method="post">
+    <fieldset>
+      <legend>BIODATA DIRI</legend>
+    <table>
+    <tr>
+    <td>NAMA :</td>
+    <td><input id="nama" type="text" name="Username" placeholder="Nama Lengkap" required=""></td>
+    </tr>
+    <tr>
+    <td>NIS :</td>
+    <td><input type="Number" name="Username" placeholder="Input NIS" required=""></td>
+    </tr>
+    <tr>
+    <td>NISN :</td>
+    <td></tf><input type="number" name="Username" placeholder="Input NISN" required=""></td>
+    </tr>
+    <tr>
+    <td>KELAS :</td>
+    <td><input type="text" name="Password" placeholder="Input Kelas" required=""></td>
+    </tr>
+    <tr>
+    <td>TEMPAT :</td>
+    <td><input type="text" name="Password" placeholder="Input TempatT" required=""></td>
+    </tr>
+    <tr>
+    <td>Tanggal lahir :</td>
+    <td><input type="date" name="Username" placeholder="Input Tanggal Lahir" required=""></td>
+    </tr>
+    <tr>
+    <td >Agama :</td>
+    <td>
+    <select name="Agama" id="agama">
+    <option value="Islam">Islam</option>
+    <option value="kristen">Kristen</option>
+    <option value="katolik">Katolik</option>
+    <option value="hindu">Hindu</option>
+    <option value="buddha">Buddha</option>
+    <option value="konghucu">Konghucu</option>
+    </select>
+    </td>
+    </tr>
+    <tr>
+    <td>ALAMAT LENGKAP :</td>
+    <td><input type="text" name="nama" placeholder="Input Alamat" required=""></td>
+    </tr>
+    <tr>
+    <td>EMAIL :</td>
+    <td><input type="text" name="email" placeholder="Input Email" required=""></td>
+    </tr>
+    <tr>
+    <td>NO.HP :</td>
+    <td><input type="tel" placeholder="Masukkan no telpon" required=""></td>
+    </tr>
+    <tr>
+    <td>Cerita Singkat :</td>
+    <td><textarea style="width: 300px;" rows="10"></textarea></td>
+    </tr>
+    <tr>
+    <td>
+    <div>
+      <input id="sub" type="submit" value="Masuk"/>
+      <input type="reset" value="Reset"/>
+    </div>
+    </td>
+    </tr>
+    </table>
+    </fieldset>
+    </form>
+    <script>
+      const nama = document.getElementById('nama');
+      const inputmasuk = document.getElementById('sub')
+      inputmasuk.addEventListener('click', function() {
+        if (nama.value.trim("") === "") {
+          alert("isi dulu woyy");
+        }
+        else {
+          window.open("login.html", "_blank")
+        }
+      });
+    </script>
+</body>
+</html>
